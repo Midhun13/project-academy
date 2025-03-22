@@ -21,14 +21,36 @@
             position: relative;
             padding: 10px 15px;
             transition: background 0.3s ease;
-            
         }
-        .nav-item{
+        .nav-item {
             margin-right: 10px;
         }
         .nav-link:hover {
             background: linear-gradient(90deg, #000000, #007bff);
             border-radius: 5px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .search-bar input {
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            margin-right: 10px;
+            outline: none;
+        }
+        .search-bar button {
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .search-bar button:hover {
+            background-color: #f8f9fa;
         }
         .card {
             margin-bottom: 20px;
@@ -111,11 +133,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
-                   <li class="nav-item">
-                       <a href="login.html">
-                           <button class="nav-link btn" style="background-color: red; text-decoration: none;">Login</button>
-                       </a>
-                   </li>
+                    <li class="nav-item">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search courses...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html">
+                            <button class="nav-link btn" style="background-color: red; text-decoration: none;">Login</button>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -193,7 +221,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">React Developer</h5>
-                        <p class="card-text">Learn about React and ui development.</p>
+                        <p class="card-text">Learn about React and UI development.</p>
                         <a href="#" class="btn btn-primary">View more →</a>
                     </div>
                 </div>
